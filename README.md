@@ -69,6 +69,38 @@ Administrators can:
 
 ---
 
+
+
+
+## 🔐 Demo Credentials
+
+Project evaluators and mentors can use the following accounts to test the application.
+
+### Admin Account
+
+Email:
+
+```text
+admin@123
+```
+
+Password:
+
+```text
+password123
+```
+
+### Testing Flow
+
+1. Login as Admin
+2. View all orders
+3. Assign delivery partners
+4. Monitor deliveries
+
+---
+
+If needed, evaluators can also create new Customer and Delivery Partner accounts using the Register page.
+
 ## 🚀 Features
 
 ### Authentication
@@ -321,31 +353,8 @@ PATCH /api/deliveries/:id/accept
 PATCH /api/deliveries/:id/complete
 ```
 
-## 📸 Screenshots
 
-Add screenshots after deployment:
 
-* Login Page
-* Register Page
-* Customer Dashboard
-* Admin Dashboard
-* Delivery Dashboard
-
----
-
-## 🌐 Live Demo
-
-Frontend:
-
-```text
-https://your-vercel-url.vercel.app
-```
-
-Backend:
-
-```text
-https://your-render-url.onrender.com
-```
 
 ---
 
