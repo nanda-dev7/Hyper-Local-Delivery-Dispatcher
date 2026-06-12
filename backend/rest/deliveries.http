@@ -1,0 +1,33 @@
+@baseUrl = http://localhost:5000
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMmFlOWUxMmQzZGQyOTRmOTdlYjg1ZiIsInJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc4MTE5NzYwNiwiZXhwIjoxNzgxODAyNDA2fQ.BB75aEVWVo-LoR8VBcvs-8Jvg7Ibb9_FJXDT0NY50TE
+
+
+###
+# Assign Delivery
+
+POST {{baseUrl}}/api/deliveries
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "orderId": "6a2aece530daaec195345c95",
+  "partnerId": "6a2ae9e12d3dd294f97eb85f"
+}
+
+###
+# Get Deliveries
+
+GET {{baseUrl}}/api/deliveries
+Authorization: Bearer {{token}}
+
+###
+# Accept Delivery
+
+PATCH {{baseUrl}}/api/deliveries/6a2aed4530daaec195345c98/accept
+Authorization: Bearer {{token}}
+
+###
+# Complete Delivery
+
+PATCH {{baseUrl}}/api/deliveries/6a2aed4530daaec195345c98/complete
+Authorization: Bearer {{token}}

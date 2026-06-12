@@ -1,0 +1,20 @@
+@baseUrl = http://localhost:5000
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMmFlOWUxMmQzZGQyOTRmOTdlYjg1ZiIsInJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc4MTE5ODU2MCwiZXhwIjoxNzgxODAzMzYwfQ.1NqlW4eVBqEsuFZrCas7qSIOnUnYDtmMdOfGcphZ_w0
+
+###
+# Get All Users
+
+GET {{baseUrl}}/api/users
+Authorization: Bearer {{token}}
+
+###
+# Get All Delivery Partners
+
+GET {{baseUrl}}/api/users/partners
+Authorization: Bearer {{token}}
+
+###
+# Get Current User Profile
+
+GET {{baseUrl}}/api/auth/me
+Authorization: Bearer {{token}}

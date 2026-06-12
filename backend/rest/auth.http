@@ -1,0 +1,52 @@
+@baseUrl = http://localhost:5000
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMmFlOWUxMmQzZGQyOTRmOTdlYjg1ZiIsInJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc4MTE5OTMzNywiZXhwIjoxNzgxODA0MTM3fQ.6q5RwPD22_WzVlnQ5mc5W_NPS7X9OCHrujCZkgosyxY
+
+
+
+
+
+
+###
+# Register Admin
+
+POST {{baseUrl}}/api/auth/register
+Content-Type: application/json
+
+{
+  "name": "Admin",
+  "email": "admin@gmail.com",
+  "phone": "9999999998",
+  "password": "password123",
+  "role": "admin"
+}
+
+###
+# Register
+
+POST {{baseUrl}}/api/auth/register
+Content-Type: application/json
+
+{
+  "name": "Vivek",
+  "email": "vivek@gmail.com",
+  "phone": "9999999999",
+  "password": "password123",
+  "role": "customer"
+}
+
+###
+# Login
+
+POST {{baseUrl}}/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "vivek@gmail.com",
+  "password": "password123"
+}
+
+###
+# Current User
+
+GET {{baseUrl}}/api/auth/me
+Authorization: Bearer {{token}}

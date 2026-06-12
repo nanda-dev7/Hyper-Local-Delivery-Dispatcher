@@ -1,0 +1,39 @@
+@baseUrl = http://localhost:5000
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMmFlOWUxMmQzZGQyOTRmOTdlYjg1ZiIsInJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc4MTE5NzYwNiwiZXhwIjoxNzgxODAyNDA2fQ.BB75aEVWVo-LoR8VBcvs-8Jvg7Ibb9_FJXDT0NY50TE
+
+###
+# Create Order
+
+POST {{baseUrl}}/api/orders
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "pickupLocation": "Madhapur",
+  "dropLocation": "Gachibowli",
+  "parcelType": "Documents",
+  "weight": 2
+}
+
+###
+# Get All Orders
+
+GET {{baseUrl}}/api/orders
+Authorization: Bearer {{token}}
+
+###
+# Get Single Order
+
+GET {{baseUrl}}/api/orders/6a2aeb443d888069976ce58c
+Authorization: Bearer {{token}}
+
+###
+# Update Order Status
+
+PATCH {{baseUrl}}/api/orders/6a2aeb443d888069976ce58c/status
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "status": "assigned"
+}
