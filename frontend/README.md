@@ -1,16 +1,80 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+# `frontend/README.md`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+````md
+# Hyper Local Delivery Dispatcher - Frontend
 
-## React Compiler
+Frontend application for the Hyper Local Delivery Dispatcher project.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+- React
+- Redux Toolkit
+- React Router DOM
+- Axios
+- Tailwind CSS
+- Socket.IO Client
+- Vite
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Features
+
+### Authentication
+
+- Login
+- Register
+- Logout
+
+### Customer Dashboard
+
+- Create Order
+- View Orders
+- Track Status
+
+### Admin Dashboard
+
+- View Orders
+- Assign Delivery Partners
+- Monitor Deliveries
+
+### Delivery Dashboard
+
+- Accept Delivery
+- Complete Delivery
+- Manage Assigned Orders
+
+---
+
+## Project Structure
+
+src/
+
+├── api/
+
+├── components/
+
+├── hooks/
+
+├── layouts/
+
+├── pages/
+
+├── routes/
+
+├── store/
+
+├── utils/
+
+├── App.jsx
+
+└── main.jsx
+
+---
+
+## Installation
+
+```bash
+npm install
