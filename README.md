@@ -81,7 +81,7 @@ Project evaluators and mentors can use the following accounts to test the applic
 Email:
 
 ```text
-admin@123
+admin@gmail.com
 ```
 
 Password:
